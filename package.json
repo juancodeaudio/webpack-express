@@ -1,0 +1,29 @@
+{
+  "name": "webpack-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "webpack --mode development && node dist/index.js",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Juan Alvarado V <alvaradovallejo.juan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@types/express": "^4.17.17",
+    "babel-loader": "^9.1.2",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.1.3",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.3",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
