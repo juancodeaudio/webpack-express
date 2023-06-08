@@ -2,7 +2,7 @@ import * as express from 'express';
 import { Request, Response } from 'express'
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3005;
 
 const initialState = {
   cart: [],
@@ -61,5 +61,5 @@ app.get("/api/v1", (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`App Listing at: http://localhost:${port}`);
+  console.log(`App Listing at:    \u001b[1;36m http://localhost:${port}`);
 });
